@@ -49,9 +49,6 @@ class LocationManagement: NSObject,
         switch manager.authorizationStatus {
         case .authorizedWhenInUse:
             print("Received authorization of user location, requesting for location")
-            locationManager.requestLocation()
-            print("Received authorization of user location, requesting for location")
-            locationManager.requestLocation()
             let result = locationTracker.startTracking(
                 delegate: self,
                 options: TrackerOptions(
