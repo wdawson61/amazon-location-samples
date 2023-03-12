@@ -6,11 +6,11 @@ import useTracker from "./hooks/useTracker";
 
 function App() {
   const [trackerPositions] = useTracker({
-    DeviceId: "thing123",
-    TrackerName: "trackerAsset01", // This is the Tracker name, change it according to your own setup
+    DeviceId: "313932316e30740b",
+    TrackerName: "CattraxTracker1", // This is the Tracker name, change it according to your own setup
     EndTimeExclusive: new Date(),
     StartTimeInclusive: new Date(
-      new Date().getTime() - 1000 * 60 * 60 * 24 * 30
+      new Date().getTime() - 1000 * 60 * 60 * 24 * 1
     ),
   });
 
@@ -18,9 +18,9 @@ function App() {
     <>
       <MapView
         initialViewState={{
-          longitude: -123.1169,
-          latitude: 49.2824,
-          zoom: 16,
+          longitude: -75.20814109999999,
+          latitude: 42.5264569,
+          zoom: 18,
         }}
         style={{ width: "100vw", height: "100vh" }}
       >

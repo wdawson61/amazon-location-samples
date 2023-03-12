@@ -32,14 +32,13 @@ const useTracker = (requestParams) => {
           if (res.DevicePositions.length === 0) {
             throw new Error("No device position history found");
           }
-          setTrackerPositions(res.DevicePositions);
+          setTrackerPositions(res.DevicePositions.slice(-10));
         } catch (error) {
           console.error("Unable to get tracker positions", error);
           throw error;
         }
       }
     };
-
     getTracerLocations();
   }, [trackerPositions, setError, requestParams]);
 
