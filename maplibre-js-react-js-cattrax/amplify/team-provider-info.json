@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cattraxtesting-dev-190210-authRole",
+      "UnauthRoleArn": "arn:aws:iam::224171891229:role/amplify-cattraxtesting-dev-190210-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::224171891229:role/amplify-cattraxtesting-dev-190210-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cattraxtesting-dev-190210-deployment",
+      "UnauthRoleName": "amplify-cattraxtesting-dev-190210-unauthRole",
+      "StackName": "amplify-cattraxtesting-dev-190210",
+      "StackId": "arn:aws:cloudformation:us-east-1:224171891229:stack/amplify-cattraxtesting-dev-190210/a46973a0-be0d-11ed-bf02-0e478602a4e5",
+      "AmplifyAppId": "d1s9sy4byl2loj"
+    },
+    "categories": {
+      "auth": {
+        "cattraxtestinge0c5aa01": {}
+      },
+      "function": {
+        "trackFunction1": {
+          "deploymentBucketName": "amplify-cattraxtesting-dev-190210-deployment",
+          "s3Key": "amplify-builds/trackFunction1-4a34773563445766445a-build.zip"
+        }
+      },
+      "geo": {
+        "CattraxHybrid": {}
+      }
+    }
+  }
+}
