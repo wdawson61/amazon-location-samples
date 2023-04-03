@@ -1,8 +1,0 @@
-target/
-packaged.yaml
-.classpath
-.env
-.envrc
-.project
-.settings/
-.vscode/

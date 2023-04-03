@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="identityPoolId">[identity pool id]</string>
-    <string name="mapName">[map name]</string>
-    <string name="awsRegion">[region]</string>
-    <string name="sceneUrl">https://www.nextzen.org/carto/cinnabar-style/9/cinnabar-style.zip</string>
-    <string name="attribution">© 2021 HERE</string>
-</resources>

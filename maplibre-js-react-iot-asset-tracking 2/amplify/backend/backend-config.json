@@ -1,0 +1,71 @@
+{
+  "auth": {
+    "cattraxtestinge0c5aa01": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "trackFunction1": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "geo": {
+    "CattraxHybrid": {
+      "accessType": "AuthorizedAndGuestUsers",
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "cattraxtestinge0c5aa01"
+        }
+      ],
+      "isDefault": true,
+      "mapStyle": "HybridHereExploreSatellite",
+      "providerPlugin": "awscloudformation",
+      "service": "Map"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_trackFunction1_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "trackFunction1"
+        }
+      ]
+    },
+    "AMPLIFY_function_trackFunction1_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "trackFunction1"
+        }
+      ]
+    }
+  }
+}
